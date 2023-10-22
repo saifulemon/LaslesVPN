@@ -1,0 +1,270 @@
+/********************* Design Steps ************************
+1. Default style
+2. Re-usable style
+3. Header Section
+4. Hero Section
+2. Services Section
+3. Welcome section
+4. Products section
+5. Work section
+6. Process section
+7. Team section
+8. Blog section
+*************************************************************/
+
+/************ 1. Default style ************/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0b132a;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+img {
+  width: 100%;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+/************ 2. Re-usable style ************/
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+@media (max-width: 426px) {
+  .container {
+    padding-inline: 3rem;
+  }
+}
+
+.primary-btn {
+  color: #fff;
+  background-color: #f53838;
+  border-radius: 10px;
+  padding: 18px 78px;
+  font-weight: 700;
+  font-size: 16px;
+  border: 2px solid transparent;
+}
+
+.primary-btn:hover {
+  color: #f53838;
+  background-color: transparent;
+  border: 2px solid #f53838;
+  box-shadow: 0 30px 27px -15px rgba(245, 56, 56, 0.35);
+}
+
+.primary-btn,
+.main-menu ul li a,
+.header-sign-in,
+.single-plan,
+.single-review,
+.social-media-icons a,
+.footer-links a {
+  transition: all 0.4s ease-in-out;
+}
+
+/************ 3. Header Section ************/
+header {
+  height: 90px;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+}
+
+header .middle-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+header .middle-menu a {
+  color: #4f5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+header .middle-menu a:hover {
+  color: #f53838;
+}
+
+header .right-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+header .right-menu a {
+  color: #0b132a;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+
+header .right-menu a:hover {
+  color: #f53838;
+}
+
+header .right-menu .btn-signup {
+  padding: 13px 45px;
+  background-color: transparent;
+  border: 1px solid #f53838;
+  border-radius: 50px;
+  transition: all 0.5s ease-in;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+header .right-menu .btn-signup:hover {
+  cursor: pointer;
+  background-color: #f53838;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  header .right-menu {
+    display: none;
+  }
+
+  header .middle-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/************ 4. Hero Section ************/
+.hero-wraper {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content,
+.hero-img {
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  font-weight: 700;
+  color: #0b132a;
+}
+
+.hero-content p {
+  margin-bottom: 50px;
+}
+
+.hero-content p span {
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .hero-wraper {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 8rem;
+    margin-inline: auto;
+  }
+
+  .hero-img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 426px) {
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 48px !important;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .primary-btn {
+    padding: 14px 50px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .hero-content h1 {
+    font-size: 40px !important;
+  }
+}
