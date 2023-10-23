@@ -6,10 +6,10 @@
 5. Counter Section
 6. Features section
 7. Plan section
-5. Work section
-6. Process section
-7. Team section
-8. Blog section
+ 
+9. 
+10. 
+11. 
 *************************************************************/
 
 /************ 1. Default style ************/
@@ -103,7 +103,7 @@ ul {
 .secondary-btn {
   padding: 12px 62px;
   background-color: transparent;
-  color: #F53838;
+  color: #f53838;
   border: 1px solid #f53838;
   border-radius: 50px;
   transition: all 0.5s ease-in;
@@ -291,7 +291,7 @@ header .right-menu a:hover {
   flex-basis: 33.33%;
   justify-content: center;
   padding: 30px 0;
-  border-right: 2px solid #EEEFF2;
+  border-right: 2px solid #eeeff2;
 }
 
 .servers {
@@ -418,7 +418,7 @@ header .right-menu a:hover {
 /************ 7. Plan section ************/
 .plan-section {
   padding-block: 80px;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
 
 .plan-title {
@@ -436,7 +436,7 @@ header .right-menu a:hover {
 
 .card-plan {
   background-color: #fff;
-  border: 2px solid #DDDDDD;
+  border: 2px solid #dddddd;
   padding: 70px 60px 50px 60px;
   text-align: center;
   flex-basis: 30%;
@@ -447,9 +447,9 @@ header .right-menu a:hover {
   justify-content: space-between;
 }
 .card-plan:hover {
-  border: 2px solid #F53838;
+  border: 2px solid #f53838;
   transform: scale(0.9);
-  box-shadow: 0 40px 40px -20px rgba(13,16,37,0.2);
+  box-shadow: 0 40px 40px -20px rgba(13, 16, 37, 0.2);
 }
 
 .card-plan-body img {
@@ -488,7 +488,7 @@ header .right-menu a:hover {
 
 .card-plan-bottom h5 span {
   font-weight: 400;
-  color: #4F5665;
+  color: #4f5665;
 }
 
 @media (max-width: 769px) {
@@ -496,5 +496,72 @@ header .right-menu a:hover {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+  }
+}
+
+/************ 8. Network section ************/
+.network-section {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #fbfbfb;
+}
+
+.network-title h2 {
+  margin-bottom: 20px;
+  max-width: 30%;
+  margin-inline: auto;
+}
+
+.network-title p {
+  max-width: 45%;
+  margin: auto;
+}
+
+.network-title p span {
+  font-weight: 500;
+}
+
+.map-img {
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+}
+
+.map-img img {
+  padding-top: 6rem;
+  padding-inline: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .network-title h2 {
+    max-width: 33%;
+  }
+  
+  .network-title p {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 769px) {
+  .network-title h2 {
+    max-width: 45%;
+  }
+  
+  .network-title p {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 426px) {
+  .network-title h2 {
+    max-width: 95%;
+  }
+  
+  .network-title p {
+    max-width: 100%;
+  }
+
+  .map-img img {
+    padding-top: 0;
+    padding-inline: 0;
+    margin-top: 3.5rem;
   }
 }
