@@ -9,7 +9,7 @@
 8. Brand section
 9. Customer section
 10. Subscribe section
-11. 
+11. Footer section
 *************************************************************/
 
 /************ 1. Default style ************/
@@ -45,7 +45,7 @@ h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   color: #4f5665;
 }
@@ -144,18 +144,18 @@ header .middle-menu {
   list-style: none;
   gap: 40px;
 }
-header  .middle-menu a {
-  color: #4F5665;
+header .middle-menu a {
+  color: #4f5665;
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-header  .middle-menu a:hover { 
-  color: #F53838;
+header .middle-menu a:hover {
+  color: #f53838;
 }
 header .right-menu {
   display: flex;
@@ -164,17 +164,17 @@ header .right-menu {
   align-items: center;
 }
 header .right-menu a {
-  color: #0B132A;
+  color: #0b132a;
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 header .right-menu a:hover {
-  color: #F53838;
+  color: #f53838;
 }
 
 .hamburger {
@@ -248,7 +248,7 @@ header .right-menu a:hover {
   }
 
   .hero-content h1 {
-    font-size: 48px !important;
+    font-size: 35px !important;
   }
 
   .hero-img {
@@ -317,21 +317,6 @@ header .right-menu a:hover {
 
 @media (max-width: 426px) {
   .counter-wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .users,
-  .location,
-  .servers {
-    border: none;
-    padding-inline: 1rem;
-  }
-}
-
-@media (max-width: 376px) {
-  .counter-wrapper {
     gap: 0;
   }
 
@@ -342,7 +327,29 @@ header .right-menu a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: none;
   }
+
+  .counter-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .counter-icon i {
+    font-size: 16px;
+  }
+
+  .count-txt h4 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .count-txt p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 376px) {
 }
 
 /************ 6. Features section ************/
@@ -515,7 +522,11 @@ header .right-menu a:hover {
 }
 
 .map-img {
-  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+  background: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
 }
 
 .map-img img {
@@ -527,7 +538,7 @@ header .right-menu a:hover {
   .network-title h2 {
     max-width: 33%;
   }
-  
+
   .network-title p {
     max-width: 50%;
   }
@@ -537,7 +548,7 @@ header .right-menu a:hover {
   .network-title h2 {
     max-width: 45%;
   }
-  
+
   .network-title p {
     max-width: 60%;
   }
@@ -547,7 +558,7 @@ header .right-menu a:hover {
   .network-title h2 {
     max-width: 95%;
   }
-  
+
   .network-title p {
     max-width: 100%;
   }
@@ -561,7 +572,11 @@ header .right-menu a:hover {
 
 /************ 8. Brand section ************/
 .brand-section {
-  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+  background: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
 }
 
 .brand-wraper {
@@ -615,15 +630,15 @@ header .right-menu a:hover {
 }
 
 .testimonial {
-  border: 2px solid #DDDDDD;
+  border: 2px solid #dddddd;
   flex-basis: 31%;
   border-radius: 10px;
   padding: 30px;
 }
 
 .testimonial:hover {
-  border: 2px solid #F53838;
-  box-shadow: 0 20px 60px -20px rgba(13,16,37,0.2);
+  border: 2px solid #f53838;
+  box-shadow: 0 20px 60px -20px rgba(13, 16, 37, 0.2);
 }
 
 .testimonial-top {
@@ -654,12 +669,12 @@ header .right-menu a:hover {
 }
 
 .rating p i {
-  color: #FEA250;
+  color: #fea250;
   padding-left: 10px;
 }
 
 .testimonial-bottom p {
-  color: #0B132A;
+  color: #0b132a;
 }
 
 @media (max-width: 992px) {
@@ -669,11 +684,10 @@ header .right-menu a:hover {
 }
 
 @media (max-width: 769px) {
-
   .customer-title h2 {
     max-width: 55%;
   }
-  
+
   .customer-title p {
     max-width: 62%;
   }
@@ -689,6 +703,7 @@ header .right-menu a:hover {
   .customer-section {
     padding-top: 10rem;
   }
+
   .customer-title h2 {
     max-width: 95%;
   }
@@ -703,7 +718,7 @@ header .right-menu a:hover {
   padding: 58px 70px;
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: 0 20px 57px -10px rgba(13,16,37,0.1);
+  box-shadow: 0 20px 57px -10px rgba(13, 16, 37, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -711,9 +726,11 @@ header .right-menu a:hover {
   position: relative;
   margin-top: 50px;
 }
+
 .subscribe-title {
   max-width: 400px;
 }
+
 .subscribe-title h2 {
   line-height: 45px;
   margin-bottom: 20px;
@@ -732,5 +749,136 @@ header .right-menu a:hover {
     gap: 7rem;
     text-align: center;
     padding: 45px 30px;
+  }
+}
+
+/************ 11. Footer section ************/
+.footer {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-color: #f8f8f8;
+}
+
+.footer-wraper {
+  display: flex;
+}
+
+.footer-info {
+  flex-basis: 50%;
+  padding-right: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.footer-info img {
+  width: 150px;
+}
+
+.footer-info p {
+  font-size: 16px;
+}
+
+.footer-info p span {
+  font-weight: 500;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #fff;
+  width: 34px;
+  height: 34px;
+  box-shadow: 2px 2px 10px rgba(13, 16, 37, 0.3);
+}
+
+.social-icons a:hover {
+  box-shadow: 2px 2px 10px rgba(245, 56, 56, 0.3);
+  transform: scale(1.1);
+}
+
+.social-icons a i,
+.designer {
+  color: #f53838 !important;
+}
+
+.copyright,
+.copyright span {
+  color: #afb5c0;
+}
+
+.footer-nav-section {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.footer-menu {
+  flex-basis: 20%;
+}
+
+.footer-menu h5 {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer-links a:hover {
+  color: #f53838;
+}
+
+@media (max-width: 769px) {
+  .footer-info {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 426px) {
+  .footer-wraper {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footer-nav-section {
+    padding-inline: 20px !important;
+  }
+
+  .footer-menu {
+    width: 120px !important;
+  }
+
+  .footer-menu h5 {
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .footer-info {
+    padding-right: 0;
   }
 }
