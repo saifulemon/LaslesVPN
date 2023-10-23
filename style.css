@@ -5,7 +5,7 @@
 4. Hero Section
 5. Counter Section
 6. Features section
-4. Products section
+7. Plan section
 5. Work section
 6. Process section
 7. Team section
@@ -78,6 +78,11 @@ ul {
   }
 }
 
+.section-title {
+  text-align: center;
+  margin: auto;
+}
+
 .primary-btn {
   color: #fff;
   background-color: #f53838;
@@ -95,10 +100,29 @@ ul {
   box-shadow: 0 30px 27px -15px rgba(245, 56, 56, 0.35);
 }
 
+.secondary-btn {
+  padding: 12px 62px;
+  background-color: transparent;
+  color: #F53838;
+  border: 1px solid #f53838;
+  border-radius: 50px;
+  transition: all 0.5s ease-in;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.secondary-btn:hover {
+  cursor: pointer;
+  background-color: #f53838;
+  color: #fff;
+  box-shadow: 0 30px 27px -15px rgba(245, 56, 56, 0.35);
+}
+
 .primary-btn,
 .main-menu ul li a,
-.header-sign-in,
-.single-plan,
+.card-plan,
 .single-review,
 .social-media-icons a,
 .footer-links a {
@@ -158,24 +182,6 @@ header .right-menu a {
 
 header .right-menu a:hover {
   color: #f53838;
-}
-
-header .right-menu .btn-signup {
-  padding: 13px 45px;
-  background-color: transparent;
-  border: 1px solid #f53838;
-  border-radius: 50px;
-  transition: all 0.5s ease-in;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-header .right-menu .btn-signup:hover {
-  cursor: pointer;
-  background-color: #f53838;
-  color: #fff;
 }
 
 .hamburger {
@@ -406,5 +412,89 @@ header .right-menu .btn-signup:hover {
   .features-content {
     padding-left: 0;
     text-align: start;
+  }
+}
+
+/************ 7. Plan section ************/
+.plan-section {
+  padding-block: 80px;
+  background-color: #FBFBFB;
+}
+
+.plan-title {
+  margin-bottom: 60px;
+}
+
+.plan-title h2 {
+  margin-bottom: 16px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-plan {
+  background-color: #fff;
+  border: 2px solid #DDDDDD;
+  padding: 70px 60px 50px 60px;
+  text-align: center;
+  flex-basis: 30%;
+  border-radius: 10px;
+  min-height: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-plan:hover {
+  border: 2px solid #F53838;
+  transform: scale(0.9);
+  box-shadow: 0 40px 40px -20px rgba(13,16,37,0.2);
+}
+
+.card-plan-body img {
+  width: 145px;
+}
+
+.card-plan-body h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 30px 0;
+}
+
+.plan-facility {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.plan-facility img {
+  width: 32px;
+}
+
+.plan-facility p {
+  font-size: 14px;
+}
+
+.card-plan-bottom h5 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.card-plan-bottom h5 span {
+  font-weight: 400;
+  color: #4F5665;
+}
+
+@media (max-width: 769px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
 }
