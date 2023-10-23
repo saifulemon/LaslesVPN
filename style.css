@@ -8,7 +8,7 @@
 7. Plan section
 8. Brand section
 9. Customer section
-10. 
+10. Subscribe section
 11. 
 *************************************************************/
 
@@ -695,5 +695,42 @@ header .right-menu a:hover {
 
   .customer-title p {
     max-width: 95%;
+  }
+}
+
+/************ 10. Subscribe section ************/
+.subscribe-wrapper {
+  padding: 58px 70px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 20px 57px -10px rgba(13,16,37,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -130px;
+  position: relative;
+  margin-top: 50px;
+}
+.subscribe-title {
+  max-width: 400px;
+}
+.subscribe-title h2 {
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 769px) {
+  .subscribe-btn {
+    padding: 18px 37px !important;
+  }
+}
+
+@media (max-width: 426px) {
+  .subscribe-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    text-align: center;
+    padding: 45px 30px;
   }
 }
